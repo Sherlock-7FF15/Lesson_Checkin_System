@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HUBU签</string>
+    <string name="btn_1">test</string>
+    <string name="text1">return data</string>
+    <string name="btn_2">刘斯测试请求专用按钮</string>
+    <string name="text2">TextView</string>
+    <string name="jiazaizhong">加载中。。。</string>
+</resources>

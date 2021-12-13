@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="345dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/Class_Code" />
+
+    <Button
+        android:id="@+id/add_class"
+        android:layout_width="90dp"
+        android:layout_height="48dp"
+        android:background="#5E96DA"
+        android:onClick="addClass"
+        android:text="添加课程"
+        android:textColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="@+id/Class_Code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toEndOf="@+id/Class_Code"
+        app:layout_constraintTop_toTopOf="@+id/Class_Code" />
+
+    <EditText
+        android:id="@+id/Class_Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="请输入课程码"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="我的课程列表"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="所有课程列表"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="339dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="444dp"
+        android:maxLines="60"
+        android:scrollbars="vertical"
+        android:text="@string/jiazaizhong"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_begin="439dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

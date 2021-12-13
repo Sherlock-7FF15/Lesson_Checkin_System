@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/login_sid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="学号/工号"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_sid" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="422dp"
+        android:layout_height="88dp"
+        android:background="#396CC6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hubulogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="hubu签到系统"
+        android:textAllCaps="true"
+        android:textColor="#438AE1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="214dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="#CEEACF"
+        android:onClick="teacherLogin"
+        android:text="教师登录"
+        android:textColor="#872101"
+        app:layout_constraintEnd_toEndOf="@+id/goRegister"
+        app:layout_constraintStart_toStartOf="@+id/goRegister"
+        app:layout_constraintTop_toBottomOf="@+id/goRegister" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="213dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:background="#CEE8EC"
+        android:onClick="login"
+        android:text="学生登录"
+        android:textColor="#0F804F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_pwd" />
+
+    <Button
+        android:id="@+id/goRegister"
+        android:layout_width="214dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="#E4BDBD"
+        android:onClick="goRegister"
+        android:text="学生注册"
+        android:textColor="#673AB7"
+        app:layout_constraintEnd_toEndOf="@+id/login"
+        app:layout_constraintStart_toStartOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="刘斯昊\n杨伯益\n  v1.0"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

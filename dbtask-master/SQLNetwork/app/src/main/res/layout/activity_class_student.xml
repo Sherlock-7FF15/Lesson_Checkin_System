@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView3"
+        android:layout_width="402dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/getCode"
+        android:layout_width="225dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="36dp"
+        android:text="获取签到码"
+        android:textColor="#020202"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/getSignCode"
+        app:layout_constraintEnd_toEndOf="@+id/getSignCode"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/getSignCode" />
+
+    <Button
+        android:id="@+id/getSignCode"
+        android:layout_width="177dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="324dp"
+        android:background="#85E17E"
+        android:onClick="getSignCode"
+        android:text="发起签到"
+        android:textColor="#FAFAFA"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="本课所有学生"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="52dp"
+        android:text="暂无"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getSignCode" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="已签到的同学"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:background="#409DE6"
+        android:onClick="refresh"
+        android:text="刷新查看已签到同学"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/getSignCode"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/getSignCode"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+</androidx.constraintlayout.widget.ConstraintLayout>

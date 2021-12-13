@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    #url: jdbc:mysql:///ssm?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=CTT
+    url: jdbc:mysql://139.196.86.99:3306/clasip?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    password: 131428
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+
+mybatis:
+  type-aliases-package: com.liujiayi.clasip.pojo #entity存放对应的实体对象
+
+# Mybatis-plus日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
