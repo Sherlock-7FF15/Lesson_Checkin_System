@@ -8,5 +8,6 @@ backend
 Android App
 ## Display
 ### ER & Database
-[image](https://github.com/Sherlock-7FF15/Lesson_Checkin_System/tree/main/pic/ER.png)
-[image](https://github.com/Sherlock-7FF15/Lesson_Checkin_System/tree/main/pic/pic3.png)
+
+![Image_text](https://github.com/Sherlock-7FF15/Lesson_Checkin_System/tree/main/pic/ER.png)
+![Image_text](https://github.com/Sherlock-7FF15/Lesson_Checkin_System/tree/main/pic/pic3.png)
