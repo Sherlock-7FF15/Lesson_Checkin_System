@@ -1,2 +1,5 @@
 # Lesson_Checkin_System
-Lesson Checkin System
+## Instruction
+### Font-end
+Web management using vue
+### 
