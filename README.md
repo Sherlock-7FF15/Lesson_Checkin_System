@@ -9,5 +9,5 @@ Android App
 ## Display
 ### ER & Database
 
-![Image text](https://github.com/Sherlock-7FF15/Lesson_Checkin_System/tree/main/pic/ER.png)
-![Image text](https://github.com/Sherlock-7FF15/Lesson_Checkin_System/tree/main/pic/pic3.png)
+![ER](https://github.com/Sherlock-7FF15/Lesson_Checkin_System/tree/main/pic/ER.png)
+![Database design](https://github.com/Sherlock-7FF15/Lesson_Checkin_System/tree/main/pic/pic3.png)
